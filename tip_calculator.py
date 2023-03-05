@@ -1,7 +1,7 @@
 total_string = input("How much was the meal total?")
 
-if total_string[0] == '$':
-    total = float(total_string - "$")
+if '$' in total_string:
+    total = float(total_string.replace('$', ''))
 else:
     total = float(total_string)
 
